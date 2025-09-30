@@ -43,10 +43,7 @@ def login():
             session['user_name'] = name
             session['user_surname'] = surname
             print("Session after login:", session)
-            print("Form data:", form)
-            print("User found:", user)
-            print("Password check result:", check_password_hash(user['password_hash'], password))
-            print("Session before redirect:", session)
+            return redirect(url_for('routes.index'))
         else:
             errors['login'].append("Неверный логин или пароль.")  #
 
