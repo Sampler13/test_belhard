@@ -11,7 +11,7 @@ def index():
     user_login = session.get('user_login')
     user_name = session.get('user_name')
     user_surname = session.get('user_surname')
-
+    print("Session in index:", session)
     return render_template('index.html',
                            user_login=user_login,
                            user_name=user_name,
