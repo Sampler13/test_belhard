@@ -27,6 +27,6 @@ questions_data = [
     # for question in questions:
     #     print(f'Вопрос: {question.text}, Правильный ответ: {question.answer}')
 
-if __name__ == "__main__":
-    app.run(debug=False, port=5001)
+# if __name__ == "__main__":
+#     app.run(debug=False, port=5001)
 
